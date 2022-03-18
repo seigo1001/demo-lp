@@ -1,0 +1,74 @@
+.c-section-title{
+    text-align: center;
+    .c-section-title__main{
+        font-size: rem(55);
+        font-weight: 900;
+        // font-family: '游ゴシック体', 'YuGothic', '游ゴシック', 'Yu Gothic', sans-serif;
+        display: inline-block;
+        @include mq(md){
+            font-size: rem(70);
+        }
+    }
+    
+    .c-section-title__blue,
+    .c-section-title__pink,
+    .c-section-title__yellow{
+        position: relative;
+    }
+    .c-section-title__blue::before,
+    .c-section-title__pink::before,
+    .c-section-title__yellow::before{
+        content: "";
+        position: absolute;
+        bottom: rem(15);
+        left: 0;
+        width: 100%;
+        height: rem(30);
+        transform: skewX(-20deg);
+        z-index: -1;
+    }
+    .c-section-title__blue::before{
+        background-color: #A1CFBC;
+    }
+    .c-section-title__pink::before{
+        background-color: #F9A6B4;
+    }
+    .c-section-title__yellow::before{
+        background-color: #FBED21;
+    }
+
+    .c-section-title__blue::after{
+        content: url(../images/common/hukidashi-right.svg);
+        position: absolute;
+        top: rem(0);
+        right: rem(0);
+        width: rem(0);
+        height: rem(0);
+        transform: scale(0.5);
+    }
+    .c-section-title__pink::after{
+        content: url(../images/common/hukidashi-left.svg);
+        position: absolute;
+        top: rem(0);
+        left: rem(-50);
+        width: rem(0);
+        height: rem(0);
+        transform: scale(0.5);
+    }
+    .c-section-title__yellow::after{
+        content: url(../images/common/hukidashi-left.svg);
+        position: absolute;
+        top: rem(0);
+        left: rem(-50);
+        width: rem(0);
+        height: rem(0);
+        transform: scale(0.5);
+    }
+
+
+    .c-section-title__sub{
+        font-size: rem(24);
+        font-weight: 700;
+    }
+
+}

@@ -1,0 +1,12 @@
+.p-footer{
+    background: #000000;
+    text-align: center;
+    padding-top: rem(30);
+    padding-bottom: rem(150);
+    @include mq(tab){
+        padding-bottom: rem(30);
+    }
+}
+.p-footer small{
+    color: #ffffff;
+}

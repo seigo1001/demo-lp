@@ -1,0 +1,71 @@
+.p-recruit{
+    font-family: 'Noto Sans JP', sans-serif;
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+    position: relative;
+}
+.p-recruit::before{
+    content: url(../images/common/star-right.svg);
+    position: absolute;
+    top: rem(-80);
+    right: rem(200);
+    width: rem(10);
+    height: rem(10);
+}
+.p-recruit__body{
+    margin-top: rem(20);
+}
+.p-recruit__table{
+    background: #ffffff;
+    border: 2px solid #000000;
+    box-shadow: 5px 5px #000000;
+    // padding: rem(55) rem(30) rem(120) rem(30);
+    @include mq(tab){
+        padding-top: rem(70);
+    }
+}
+.p-recruit__table tr,
+.p-recruit__table td{
+    display: block;
+    width: 100%;
+    border: none;
+}
+.p-recruit__table tr{
+    padding-top: rem(55);
+    padding-left: rem(30);
+    padding-right: rem(30);
+    @include mq(tab){
+        display: flex;
+        max-width: rem(700);
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+.p-recruit__table tr:first-child{
+    @include mq(tab){
+        padding-top: rem(100);
+    }
+}
+.p-recruit__table tr:last-child td{
+    border-bottom: none;
+}
+
+.p-recruit__table .p-recruit__label{
+    font-weight: 700;
+    @include mq(tab){
+        width: 20%;
+        border-bottom: 2px dashed #000000;
+        padding-bottom: rem(30);
+    }
+}
+.p-recruit__table .p-recruit__content{
+    font-weight: 700;
+    border-bottom: 2px dashed #000000;
+    @include mq(tab){
+        width: 80%;
+        padding-bottom: rem(30);
+    }
+}
+.p-recruit__table tr:last-child .p-recruit__content{
+    padding-bottom: rem(120);
+}

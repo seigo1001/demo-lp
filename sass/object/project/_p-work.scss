@@ -1,0 +1,107 @@
+.p-work{
+    font-family: 'Noto Sans JP', sans-serif;
+    padding-top: rem(120);
+    padding-bottom: rem(130);
+    position: relative;
+}
+.p-work::before{
+    content: url(../images/common/star-right.svg);
+    position: absolute;
+    top: rem(-80);
+    right: rem(200);
+    width: rem(10);
+    height: rem(10);
+}
+.p-work__content{
+    text-align: center;
+}
+
+.p-work__reason{
+    text-align: center;
+}
+
+.p-work__training{
+    text-align: center;
+    max-width: rem(700);
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: rem(50);
+}
+.p-work__trainingTable{
+    background: #ffffff;
+    padding: rem(60) rem(20);
+    border: 2px solid #000000;
+    box-shadow: 5px 5px #000000;;
+    @include mq(tab){
+        padding: rem(60) rem(50);
+    }
+}
+.p-work__trainingItem{
+    text-align: left;
+    font-size: rem(20);
+    font-weight: 700;
+    border-bottom: 1px dashed #000000;
+    padding-top: rem(20);
+    padding-bottom: rem(20);
+    padding-left: rem(50);
+    position: relative;
+    @include mq(tab){
+        font-size: rem(24);
+    }
+}
+.p-work__trainingItem::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: rem(5);
+    width: rem(20);
+    height: rem(20);
+    border: 1px solid #000000;
+    box-shadow: 2px 2px #000000;
+}
+.p-work__trainingItem::after{
+    content: "";
+    position: absolute;
+    top: calc(50% - 12px);
+    transform: translateY(-50%);
+    left: rem(13);
+    width: rem(10);
+    height: rem(18);
+    border-bottom: 4px solid #4EB187;
+    border-right: 4px solid #4EB187;
+    transform: rotate(45deg);
+}
+.p-work__trainingItem:first-child{
+    padding-top: 0;
+}
+.text-green{
+    color: #4EB187;
+}
+
+.p-work__roadmap{
+    text-align: center;
+}
+.p-work__roadmapImage{
+    background: #ffffff;
+    border: 2px solid #000000;
+    box-shadow: 5px 5px #000000;
+    margin-bottom: rem(40);
+}
+.p-work__roadmapText{
+    font-size: rem(20);
+    font-weight: 700;
+    text-align: left;
+}
+
+.p-work__wrap{
+    display: block;
+    @include mq(tab){
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.wider{
+    padding-left: 50px;
+    padding-right: 50px;
+}

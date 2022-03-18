@@ -1,0 +1,41 @@
+.c-point-attract{
+    display: block;
+    @include mq(tab){
+        display: flex;
+        align-items: center;
+    }
+}
+.reverse{
+    @include mq(tab){
+        flex-direction: row-reverse;
+    }
+}
+.c-point-attract__header{
+    font-size: rem(28);
+    font-weight: 700;
+    margin-bottom: rem(20);
+    @include mq(tab){
+        margin-bottom: rem(40);
+    }
+}
+.c-point-attract__body{
+    font-size: rem(18);
+    font-weight: 700;
+}
+.c-point-attract__img{
+    margin-top: rem(50);
+    margin-bottom: rem(120);
+    box-shadow: rem(10) rem(10) #F9A6B4;
+    @include mq(md){
+        box-shadow: rem(20) rem(20) #F9A6B4;
+    }
+    @include mq(tab){
+        width: 47%;
+        margin-bottom: rem(100);
+    }
+}
+.c-point-attract__text{
+    @include mq(tab){
+        width: 53%;
+    }
+}

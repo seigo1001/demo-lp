@@ -1,0 +1,37 @@
+.p-introduction{
+    font-family: 'Noto Sans JP', sans-serif;
+    padding-top: rem(120);
+    padding-bottom: rem(100);
+}
+.p-intro-wrap{
+    display: block;
+    @include mq(tab){
+        display: flex;
+    }
+}
+.p-intro-wrap__text{
+    padding-bottom: rem(60);
+    @include mq(tab){
+        width: 40%;
+        margin-right: rem(50);
+    }
+}
+.p-intro-wrap__header{
+    // font-size: unquote('min(calc(rem(69)/750*100vw), rem(30))');
+    font-size: rem(36);
+    color: #4EB187;
+    font-weight: 700;
+    border-bottom: 2px solid #4EB187;
+    padding-bottom: rem(46);
+}
+.p-intro-wrap__body{
+    font-size: rem(17);
+    font-weight: 700;
+    padding-top: rem(50);
+}
+.p-intro-wrap__img{
+    @include mq(md){
+        width: 60%;
+        margin: 0 auto;
+    }
+}

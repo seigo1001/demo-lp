@@ -1,0 +1,47 @@
+.c-member{
+    background: #ffffff;
+    padding: rem(60) rem(30) rem(80) rem(30);
+    text-align: center;
+    border: 2px solid #000000;
+    box-shadow: 5px 5px #000000;
+    margin-bottom: rem(60);
+    display: block;
+    @include mq(tab){
+        display: flex;
+        align-items: center;
+        padding: rem(40) rem(40) rem(40) rem(40);
+    }
+}
+.c-member__img{
+    @include mq(tab){
+        width: rem(300);
+        height: rem(300);
+        margin-right: rem(30);
+    }
+}
+.c-member__wrap{
+    @include mq(tab){
+        width: rem(550);
+        text-align: left;
+    }
+}
+
+.c-member__name{
+    font-size: rem(32);
+    font-weight: 700;
+    color: #4EB187;
+    margin-top: rem(30);
+    margin-bottom: rem(40);
+    @include mq(tab){
+        font-size: rem(36);
+        margin: 0;
+    }
+}
+.c-member__message{
+    font-size: rem(16);
+    font-weight: 700;
+    text-align: left;
+    @include mq(tab){
+        font-size: rem(16);
+    }
+}

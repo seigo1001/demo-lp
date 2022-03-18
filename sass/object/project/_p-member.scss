@@ -1,0 +1,17 @@
+.p-member{
+    font-family: 'Noto Sans JP', sans-serif;
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+    position: relative;
+}
+.p-member::before{
+    content: url(../images/common/star-left.svg);
+    position: absolute;
+    top: rem(-50);
+    left: rem(20);
+    width: 10px;
+    height: 10px;
+}
+.p-member__intro{
+    margin-top: rem(60);
+}
